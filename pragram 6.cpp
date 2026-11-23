@@ -10,7 +10,7 @@ public:
 string name;
 int mark;
 
-22
+
 
 char grade;
 };
@@ -40,7 +40,7 @@ if (s.mark >= 90)
 s.grade = 'A';
 else if (s.mark >= 75)
 
-23
+
 
 s.grade = 'B';
 else if (s.mark >= 50)
