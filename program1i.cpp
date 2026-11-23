@@ -8,7 +8,7 @@ string name;
 public:
 // Constructor
 
-5
+
 
 Student(int r, string n)
 {
