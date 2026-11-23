@@ -5,7 +5,7 @@
 using namespace std;
 using namespace chrono;
 
-38
+
 
 class String
 {
@@ -34,7 +34,7 @@ String(String&& other) noexcept
 data = other.data;
 length = other.length;
 
-39
+
 
 other.data = nullptr;
 other.length = 0;
@@ -62,7 +62,7 @@ if (this != &other)
 {
 delete[] data;
 
-40
+
 
 data = other.data;
 length = other.length;
@@ -92,7 +92,7 @@ template <typename T>
 String createString(T&& value)
 {
 
-41
+
 
 return String(forward<T>(value));
 }
@@ -121,7 +121,7 @@ duration_cast<milliseconds>(endCopy - startCopy);
 // Benchmark Move Operations
 auto startMove = high_resolution_clock::now();
 
-42
+
 
 for (int i = 0; i < SIZE; i++)
 {
@@ -151,7 +151,7 @@ cout << "\nCopy Operation Time: "
 
 cout << "Move Operation Time: "
 
-43
+
 
 << moveTime.count()
 << " milliseconds" << endl;
