@@ -6,7 +6,7 @@ public:
 virtual float area() = 0; // Pure virtual function
 };
 
-8
+
 
 class Circle : public Shape
 {
@@ -36,7 +36,7 @@ float area()
 {
 return length * breadth;
 
-9
+
 
 }
 };
@@ -66,7 +66,7 @@ cout << "Area of Circle: " << ptr->area() << endl;
 ptr = &r;
 cout << "Area of Rectangle: " << ptr->area() << endl;
 
-10
+
 
 ptr = &t;
 cout << "Area of Triangle: " << ptr->area() << endl;
