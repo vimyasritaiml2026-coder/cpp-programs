@@ -9,7 +9,7 @@ class MyStack
 {
 private:
 
-17
+
 
 T data[10000];
 int top;
@@ -39,7 +39,7 @@ public:
 MyQueue()
 {
 
-18
+
 
 front = 0;
 rear = -1;
@@ -69,7 +69,7 @@ myStack.pop();
 auto end = high_resolution_clock::now();
 auto customStackTime =
 
-19
+
 duration_cast<microseconds>(end - start);
 // STL Stack Benchmark
 start = high_resolution_clock::now();
@@ -98,7 +98,7 @@ for (int i = 0; i < N; i++)
 stlQueue.push(i);
 for (int i = 0; i < N; i++)
 
-20
+
 
 stlQueue.pop();
 end = high_resolution_clock::now();
