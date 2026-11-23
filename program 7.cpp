@@ -5,7 +5,7 @@ using namespace std;
 
 // Base custom exception class
 
-32
+
 class BankException : public exception
 {
 protected:
@@ -33,7 +33,7 @@ InsufficientFundsException()
 }
 };
 
-33
+
 
 // Another derived exception class
 class InvalidAmountException : public BankException
@@ -63,7 +63,7 @@ void deposit(double amount)
 if (amount <= 0)
 throw InvalidAmountException();
 
-34
+
 
 balance += amount;
 }
@@ -92,7 +92,7 @@ try
 {
 cout << "\nDepositing Rs. 1000..." << endl;
 
-35
+
 
 account.deposit(1000);
 cout << "Withdrawing Rs. 2000..." << endl;
